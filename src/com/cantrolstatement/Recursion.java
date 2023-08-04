@@ -10,7 +10,7 @@ public class Recursion {
 			return;
 			
 		}
-		System.out.println("😘");
+		System.out.println("I love you😘");
 		Recursion(a+1);
 	}
 
