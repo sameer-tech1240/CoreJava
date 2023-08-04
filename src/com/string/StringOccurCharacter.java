@@ -1,10 +1,5 @@
 package com.string;
-
 public class StringOccurCharacter {
-	
-
-	
-	 
 	static final int MAX_CHAR = 256;  
 	static void getOccuringChar(String str)  
 	{  
