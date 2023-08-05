@@ -4,17 +4,17 @@ public class StringDemo {
 	public static void main(String[] args) {
 		String str = "I am working right now";
 		String s[]=str.split(" ");
-		String reverseString="";
+		String reverse="";
 		for(int i=0;i<s.length;i++) {
 			if(i==s.length-1) {
-				reverseString=s[i]+reverseString;
+				reverse=s[i]+reverse;
 			}
 			else {
-				reverseString=" "+s[i]+reverseString;
+				reverse=" "+s[i]+reverse;
 			}
 		
 		}
-		System.out.print(reverseString);
+		System.out.print(reverse);
 	}
 
 }
