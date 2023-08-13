@@ -1,7 +1,7 @@
-package com.oops; 
+package com.oops;
 
 import java.util.Scanner;
-public class BankMain {
+public class BankMain2 {
 
 	
 	           
