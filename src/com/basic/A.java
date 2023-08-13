@@ -9,10 +9,12 @@ public class A {
 		 * {1,2,3,4,5}; System.out.println(a);
 		 */
 		
-		String name ="Null";
-		String name2 ="NULL";
-		String name3=name.toUpperCase();
-		System.out.println(name == name2);
+		//String name = new String("null");
+		//String name2 ="NULL";
+	//	String name3=name.toUpperCase();
+		//System.out.println(name == "null");
+		String url = "jdbc:mysql://localhost:3306/"+"sameer";
+		System.out.println(url);
 	}
 
 }
