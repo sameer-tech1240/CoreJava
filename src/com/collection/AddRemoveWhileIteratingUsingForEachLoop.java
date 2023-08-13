@@ -15,10 +15,9 @@ public class AddRemoveWhileIteratingUsingForEachLoop {
 		System.out.println("Original Fruit list :- \n " + fruits + "\n");
 		for (String fruit : fruits) {
 			fruits.remove(fruit);
-			
+
 		}
-		 System.out.println("\nAfter removal of Melons & addition of Banana :- \n"
-	                + fruits);
+		System.out.println("\nAfter removal of Melons & addition of Banana :- \n" + fruits);
 	}
 
 }
