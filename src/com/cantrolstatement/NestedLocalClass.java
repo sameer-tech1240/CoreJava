@@ -4,7 +4,7 @@ public class NestedLocalClass {
 	void show() {
 		System.out.println("hii");
 		class NestedLocalClass1{
-			void show1() {
+		void show1() {
 				System.out.println("byy");
 			}
 		}

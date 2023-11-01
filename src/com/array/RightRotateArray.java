@@ -1,6 +1,6 @@
 package com.array;
 
-/*import javax.swing.JOptionPane;*/
+
 
 public class RightRotateArray {
 	public static void rotateArray(int[] n) {
@@ -15,9 +15,7 @@ public class RightRotateArray {
 			System.out.print(n[i]);
 		}
 
-		/*
-		 * JOptionPane.showConfirmDialog(null, "Fuck");
-		 */
+		
 	}
 
 	public static void main(String[] args) {

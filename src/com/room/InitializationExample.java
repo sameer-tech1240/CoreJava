@@ -1,27 +1,33 @@
 package com.room;
-public final class Student {
-    private final int id;
-    private final String name;
-    public Student (int id, String name)
-    {
-        this.id=id;
-        this.name=name;
-    }
-    public int getId(){
-        return id;
-    }
-    public String getName(){
-        return name;
-    }
-    
-    public void printStudentDetails() {
-        System.out.println("Student ID: " + id);
-        System.out.println("Student Name: " + name);
-    }
-    public static void main(String[] args) {
-    	Student student = new Student(101, "sameer");
-    	student.printStudentDetails();
-	
-		
+
+	public class InitializationExample {
+	    // Static variables
+	    static int staticVar = 10;
+
+	    // Static block
+	    static {
+	        System.out.println("Static block: This will be executed first.");
+	    }
+
+	    // Instance variables
+	    int instanceVar = 20;
+
+	    // Instance block
+	    {
+	        System.out.println("Instance block: This will be executed second.");
+	    }
+ 
+	    // Constructor
+	    public InitializationExample() {
+	        System.out.println("Constructor: This will be executed third.");
+	    }
+
+	    public static void main(String[] args) {
+	        System.out.println("Main method: This will be executed last.");
+
+	        // Creating an object of InitializationExample class
+	        InitializationExample example = new InitializationExample();
+	    
 	}
+
 }

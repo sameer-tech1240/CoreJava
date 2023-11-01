@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 public class BankOperaotr {
 
-	ArrayList<Accounter> AL = new ArrayList<Accounter>();
+	ArrayList<Accounter> al = new ArrayList<Accounter>();
 
 	public void addNewRecord() {
 		Scanner input = new Scanner(System.in);
@@ -25,7 +25,7 @@ public class BankOperaotr {
 		double am = input.nextDouble();
 
 		Accounter ac = new Accounter(n, a, p, am);
-		AL.add(ac);
+		al.add(ac);
 		return;
 	}
 
@@ -35,10 +35,10 @@ public class BankOperaotr {
 		int s_acc = input.nextInt();
 		System.out.print("Enter Sender's pin code: ");
 		String s_pin = input.next();
-
+		
 		int sender_index = -1;
-		for (int i = 0; i < AL.size(); i++) {
-			if (AL.get(i).getAccountNumber() == s_acc && AL.get(i).getPIN().equals(s_pin))
+		for (int i = 0; i < al.size(); i++) {
+			if (al.get(i).getAccountNumber() == s_acc && al.get(i).getPIN().equals(s_pin))
 				sender_index = i;
 		}
 
@@ -51,8 +51,8 @@ public class BankOperaotr {
 		int r_acc = input.nextInt();
 
 		int receiver_index = -1;
-		for (int i = 0; i < AL.size(); i++) {
-			if (AL.get(i).getAccountNumber() == r_acc)
+		for (int i = 0; i < al.size(); i++) {
+			if (al.get(i).getAccountNumber() == r_acc)
 				receiver_index = i;
 		}
 
@@ -63,9 +63,9 @@ public class BankOperaotr {
 
 		System.out.print("\nAmount to be transferred: ");
 		double amount = input.nextDouble();
-		if (AL.get(sender_index).getAmount() >= amount) {
-			AL.get(receiver_index).setAmount(AL.get(receiver_index).getAmount() + amount);
-			AL.get(sender_index).setAmount(AL.get(sender_index).getAmount() - amount);
+		if (al.get(sender_index).getAmount() >= amount) {
+			al.get(receiver_index).setAmount(al.get(receiver_index).getAmount() + amount);
+			al.get(sender_index).setAmount(al.get(sender_index).getAmount() - amount);
 			return;
 		} else {
 			System.out.println("\nSender doesnot have this much balance in his account");
@@ -81,9 +81,9 @@ public class BankOperaotr {
 		String p_pin = input.next();
 
 		int person_index = -1;
-		for (int i = 0; i < AL.size(); i++) {
+		for (int i = 0; i < al.size(); i++) {
 
-			if ((AL.get(i).getAccountNumber() == p_acc) && (AL.get(i).getPIN().equals(p_pin))) {
+			if ((al.get(i).getAccountNumber() == p_acc) && (al.get(i).getPIN().equals(p_pin))) {
 				person_index = i;
 			}
 		}
@@ -95,8 +95,8 @@ public class BankOperaotr {
 
 		System.out.print("\nAmount to be Withdrawn: ");
 		double amount = input.nextDouble();
-		if (AL.get(person_index).getAmount() >= amount) {
-			AL.get(person_index).setAmount(AL.get(person_index).getAmount() - amount);
+		if (al.get(person_index).getAmount() >= amount) {
+			al.get(person_index).setAmount(al.get(person_index).getAmount() - amount);
 			return;
 		} else {
 			System.out.println("\nThis person doesnot have this much balance in his account");
@@ -105,10 +105,10 @@ public class BankOperaotr {
 	}
 
 	public void print() {
-		for (int i = 0; i < AL.size(); i++) {
-			System.out.println("\nName: " + AL.get(i).getName());
-			System.out.println("Account Number: " + AL.get(i).getAccountNumber());
-			System.out.println("Balance: " + AL.get(i).getAmount() + "\n");
+		for (int i = 0; i < al.size(); i++) {
+			System.out.println("\nName: " + al.get(i).getName());
+			System.out.println("Account Number: " + al.get(i).getAccountNumber());
+			System.out.println("Balance: " + al.get(i).getAmount() + "\n");
 		}
 	}
 
@@ -120,7 +120,7 @@ public class BankOperaotr {
 				Accounter temp = (Accounter) in.readObject();
 				if (temp == null)
 					break;
-				AL.add(temp);
+				al.add(temp);
 			}
 			fis.close();
 		} catch (Exception e) {
@@ -131,8 +131,8 @@ public class BankOperaotr {
 		try {
 			FileOutputStream fos = new FileOutputStream("BankRecord.txt");
 			ObjectOutputStream out = new ObjectOutputStream(fos);
-			for (int i = 0; i < AL.size(); i++)
-				out.writeObject(AL.get(i));
+			for (int i = 0; i < al.size(); i++)
+				out.writeObject(al.get(i));
 			fos.close();
 		} catch (Exception e) {
 			System.out.println("\nError Saving Data to File");

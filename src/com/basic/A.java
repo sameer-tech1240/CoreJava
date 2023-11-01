@@ -1,5 +1,7 @@
 package com.basic;
 
+import java.util.ArrayList;
+
 public class A {
 
 	public static void main(String[] args) {
@@ -15,6 +17,13 @@ public class A {
 		//System.out.println(name == "null");
 		String url = "jdbc:mysql://localhost:3306/"+"sameer";
 		System.out.println(url);
+		ArrayList<Object> arr = new ArrayList<>();
+		arr.add(1);
+	arr.add(43);
+	arr.add(12);
+	for (int i = 0; i < arr.size(); i++) {
+		System.out.println(arr.get(i));
+	}
 	}
 
 }

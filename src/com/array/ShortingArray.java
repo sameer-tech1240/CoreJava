@@ -10,6 +10,7 @@ public class ShortingArray {
 					int temp = n[j];
 					n[j] = n[j + 1];
 					n[j + 1] = temp;
+
 				}
 			}
 		}

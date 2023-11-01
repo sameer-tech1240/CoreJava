@@ -14,20 +14,21 @@ public class LoginUserId {
 		System.out.println("enter your pass...");
 		String lname = sc.nextLine();
 		if (name.equals(fname) && password.equals(lname)) {
-			
+
 			System.out.println("login successfully...");
-			//JOptionPane.showMessageDialog(null, "sale login ho gya");
-			
-		    		}
-		else
-			//System.out.println("invalid " + "\nName :" + fname + " " + "\npassword :" + lname + "\nuser not found....");
-	System.out.println("invalid User : " +"\nName : "+fname.concat("\nPassword : "+lname));
-	    sc.close();
-	    
+			// JOptionPane.showMessageDialog(null, "sale login ho gya");
+
+		} else
+			// System.out.println("invalid " + "\nName :" + fname + " " + "\npassword :" +
+			// lname + "\nuser not found....");
+			System.out.println("invalid User : " + "\nName : " + fname.concat("\nPassword : " + lname));
+		sc.close();
+
 	}
-public static void main(String[] args) {
-	LoginUserId l = new LoginUserId();
-	l.emp();
-}
+
+	public static void main(String[] args) {
+		LoginUserId l = new LoginUserId();
+		l.emp();
+	}
 
 }
