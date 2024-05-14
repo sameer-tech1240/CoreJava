@@ -7,7 +7,7 @@ public class MaximumOccurCharacter {
 
 	public static void main(String[] args) {
 		
-		String name = "sahiljamal";
+		String name = "Adil Siddiqui";
 		int max = Integer.MIN_VALUE;
 		Map<Character,Integer> map = new HashMap<>();
 		for(char c : name.toCharArray()) {

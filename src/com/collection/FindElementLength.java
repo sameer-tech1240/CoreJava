@@ -13,6 +13,8 @@ public class FindElementLength {
 			if (string.length() > 6) {
 				System.out.println(string);
 
+			}else {
+				System.err.println(string);
 			}
 
 		}

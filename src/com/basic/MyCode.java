@@ -1,14 +1,22 @@
 package com.basic;
 
+import java.util.Scanner;
+
 public class MyCode {
 	
 	public static void main(String[] args) {
-		int a = 5;
-		
-		System.out.println(~a);
-		System.out.println(4+3+"sameer");
-		System.out.println(4+3+"sameer"+3+4);
-		System.out.println('A'+'B'+'C');
+		 Scanner scanner = new Scanner(System.in);
+	        System.out.print("Enter the number of rows: ");
+	        int rows = scanner.nextInt();
+	        System.out.print("Enter the number of columns: ");
+	        int columns = scanner.nextInt();
+	        for (int i = 1; i <= rows; i++) {
+	            for (int j = 1; j <= columns; j++) {
+	                System.out.print(i * j + "\t");
+	            }
+	            System.out.println(); 
+	        }
+	        scanner.close();
 	}
 
 }

@@ -9,7 +9,7 @@ public class CompareTwoList {
 		List<String> list = new LinkedList<>();
 		Collections.addAll(list, "sameer", "aadil");
 		List<String> list1 = new LinkedList<>();
-		Collections.addAll(list1, "sameer", "aadil");
+		Collections.addAll(list1, "sameer", "aadil","yasir");
 		boolean b = list.equals(list1);
 		System.out.println(b);
 	}

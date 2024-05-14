@@ -25,14 +25,14 @@ public class ItrateArrayList {
 		set.add(6);
 		set.add(8);
 
-		for (Iterator iterator = set.iterator(); iterator.hasNext();) {
+		for (@SuppressWarnings("rawtypes")
+		Iterator iterator = set.iterator(); iterator.hasNext();) {
 			Object next = iterator.next();
 			System.out.println(next); // 2 3 5 6 8
 
 		}
 		Iterator<Integer> iterator = arrayList.iterator();
 		while (iterator.hasNext()) {
-			@SuppressWarnings("unused")
 			Integer next = iterator.next();
 
 		}

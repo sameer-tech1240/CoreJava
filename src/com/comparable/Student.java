@@ -1,14 +1,14 @@
 package com.comparable;
 
-public class Stuudent implements Comparable<Stuudent>{
+public class Student implements Comparable<Student>{
 	 private int id;
 	private String name;
 	private long number;
 	private String address;
-public Stuudent() {
+public Student() {
 		
 	}
-	public Stuudent(int id, String name, long number, String address) {
+	public Student(int id, String name, long number, String address) {
 		this.id = id;
 		this.name = name;
 		this.number = number;
@@ -45,7 +45,7 @@ public Stuudent() {
 		return "Stuudent [id=" + id + ", name=" + name + ", number=" + number + ", address=" + address + "]";
 	}
 	@Override
-	public int compareTo(Stuudent o) {
+	public int compareTo(Student o) {
 		
 		return this.id - o.id;
 	}

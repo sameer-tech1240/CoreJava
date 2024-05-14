@@ -16,9 +16,8 @@ public class SumOfEvenNumberUseTernory {
 				System.out.println(i);
 
 			}
-
+              
 		}
 
-	
 	}
 }

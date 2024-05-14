@@ -6,14 +6,14 @@ import java.util.List;
 
 public class Student_Main {
 	public static void main(String[] args) {
-		List<Stuudent> al = new ArrayList<>();
-		al.add(new Stuudent(21, "sameer", 8828456078l, "saki naka"));
-		al.add(new Stuudent(22, "aadil noor", 9517058289l, "saki naka"));
-		al.add(new Stuudent(23, "zaid", 8823879845l, "saki naka"));
-		al.add(new Stuudent(24, "shoaib", 8765437890l, "saki naka"));
+		List<Student> al = new ArrayList<>();
+		al.add(new Student(21, "sameer", 8828456078l, "saki naka"));
+		al.add(new Student(22, "aadil noor", 9517058289l, "saki naka"));
+		al.add(new Student(23, "zaid", 8823879845l, "saki naka"));
+		al.add(new Student(24, "shoaib", 8765437890l, "saki naka"));
 		Collections.sort(al);
 
-		for (Stuudent stuudent : al) {
+		for (Student stuudent : al) {
 			System.out.println(stuudent.getId() + " " + stuudent.getName() + " " + stuudent.getNumber() + " "
 					+ stuudent.getAddress());
 
