@@ -12,7 +12,7 @@ interface Male {
 
 }
 
-interface Femail {
+interface Femail{
 	void femail();
 
 }

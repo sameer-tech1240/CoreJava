@@ -1,5 +1,7 @@
 package com.room;
 
+import java.util.Arrays;
+
 import com.room.Collage.Students;
 
 class Collage {
@@ -24,6 +26,11 @@ public class NestedInterface {
 		System.out.println(c);
 		System.out.println("Second way to call numberofstudent method.....");
 		System.out.println(teachers.numberOfStudents());
+		int a[]= {12,34,54,32};
+		/*
+		 * int asInt = Arrays.stream(a).sorted().findFirst().getAsInt();
+		 * System.out.println(asInt);
+		 */
 
 	}
 

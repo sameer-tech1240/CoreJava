@@ -13,15 +13,24 @@ public class ConcurrentException {
         list.add("c");
         list.add("d");
         
-        Iterator<String> iterator = list.listIterator();
+        Iterator<String> iterator = list.iterator();
+        for(; iterator.hasNext();) {
+        	String name = iterator.next();
+        	System.out.println(name);
+        	
+        }
+        	
+        
         while (iterator.hasNext()) {
-        	list.add(3 ,"sameer");
-             System.out.println(iterator.next());
+//        	list.add(3 ,"sameer");
+        	   
+            // System.out.println(iterator.next());
+          
             
 			
 		}
         
-      List<String> list2 = new CopyOnWriteArrayList<String>(list);
+     /* List<String> list2 = new CopyOnWriteArrayList<String>(list);
       Iterator<String> iterator1 =  list.iterator();
       while (iterator1.hasNext()) {
       	list2.add(3 ,"sameer");
@@ -31,6 +40,6 @@ public class ConcurrentException {
 		}
       
 	}
-	
-
+	*/
+	}
 }

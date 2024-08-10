@@ -8,6 +8,10 @@ public class DynamicCustomArrayListMain {
 		list.insert("Sameer");
 		list.insert(78);
 		list.insert("Aadil");
+		System.out.println(list.capacity());
+		System.out.println(list.size());
+		list.print();
+		System.out.println(list.kyaKhaliHai());
 
 	}
 

@@ -2,7 +2,7 @@ package com.array;
 
 public class FindMissingNumber {
 	public static void main(String[] args) {
-		int a[] = { 1, 2, 3, 5 };
+		int a[] = { 1, 2, 4, 5, 7 };
 		int n = a.length + 1;
 		int totalsum = (n * (n + 1) / 2);
 		int sum = 0;
@@ -10,7 +10,8 @@ public class FindMissingNumber {
 			sum += a[i];
 		}
 		int missing = totalsum - sum;
-		System.out.println("Missing number is : " + missing);
+
+		System.out.println(missing);
 	}
 
 }

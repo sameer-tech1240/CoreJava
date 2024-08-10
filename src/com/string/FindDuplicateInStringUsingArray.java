@@ -2,6 +2,11 @@ package com.string;
 
 public class FindDuplicateInStringUsingArray {
 	public static void main(String[] args) {
+		int a = 10;
+		int b = 5;
+		int ans = a * b / a - b;
+		int ans1 = (a * b) / (a - b);
+		System.out.println(ans + "" + ans1);
 		String string = "Adil Siddiqui";
 		char[] array = string.toCharArray();
 		for (int i = 0; i < array.length; i++) {
@@ -12,7 +17,7 @@ public class FindDuplicateInStringUsingArray {
 				}
 
 			}
-                             
+
 		}
 
 		System.out.println("-----------------------------");
