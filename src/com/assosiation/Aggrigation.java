@@ -1,12 +1,12 @@
 package com.assosiation;
 
-public class Aggri_Gation {
+public class Aggrigation {
 	String name;
 	String city;
 	int id;
 
-	//constuctor
-	public Aggri_Gation(String name, String city, int id) {
+	/* constuctor */
+	public Aggrigation(String name, String city, int id) {
 		this.name = name;
 		this.city = city;
 		this.id = id;

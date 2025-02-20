@@ -1,7 +1,5 @@
 package com.room;
 
-import java.util.Arrays;
-
 import com.room.Collage.Students;
 
 class Collage {

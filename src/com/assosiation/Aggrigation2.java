@@ -1,10 +1,10 @@
 package com.assosiation;
 
-public class Aggri_Gation2 {
-	Aggri_Gation aggri_Gation;
+public class Aggrigation2 {
+	Aggrigation aggri_Gation;
 	String pass;
 
-	public Aggri_Gation2(Aggri_Gation aggri_Gation, String pass) {
+	public Aggrigation2(Aggrigation aggri_Gation, String pass) {
 		this.aggri_Gation = aggri_Gation;
 		this.pass = pass;
 	}
